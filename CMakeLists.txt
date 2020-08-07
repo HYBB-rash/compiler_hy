@@ -3,4 +3,4 @@ project(complier_hy)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(complier_hy main.cpp)
+add_executable(complier_hy main.cpp include/tokens.h include/utils.h src/token.cpp)

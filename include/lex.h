@@ -4,5 +4,5 @@
 
 #ifndef COMPILER_HY_LEX_H
 #define COMPILER_HY_LEX_H
-void yylex();
+void lex();
 #endif //COMPILER_HY_LEX_H

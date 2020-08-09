@@ -2,10 +2,15 @@
 // Created by hyong on 2020/8/10.
 //
 #include "../include/tokens.h"
-token_::token_(token_kind type, const string& lex) {
+token_::token_(token_kind type, char*& lex) {
     lexeme.clear();
     tk = type;
-    if (tk == ID || tk == NUMBER) lexeme.assign(lex);
+    lexeme.assign(lex);
     cout << endl << "token: " << type << " ";
     lexeme.empty() ? cout << endl : cout << lexeme << endl;
+}
+token_::token_(token_kind type){
+	lexeme.clear();
+	tk = type;
+	cout << endl << "token: " << type << " ";
 }

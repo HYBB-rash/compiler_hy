@@ -29,6 +29,7 @@ class token_{
 public:
     enum token_kind tk;
     string lexeme;
-    explicit token_(token_kind type, const string& lex = "");
+    token_(token_kind type);
+	explicit token_(token_kind type, char*& lex);
 };
 #endif //COMPLIER_HY_TOKENS_H

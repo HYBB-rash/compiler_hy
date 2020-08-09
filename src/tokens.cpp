@@ -45,8 +45,8 @@ void controllerInit(){
     controller["id"]        = ID;
     controller["number"]    = NUMBER;
 }
-token_::token_(const string& type, string lex) {
-    lex.clear();
+token_::token_(const string& type, char* lex) {
+    lexeme.clear();
     tk = static_cast<token_kind>(controller[type]);
     if (tk == ID || tk == NUMBER) lexeme.assign(lex);
     cout << endl << "token: " << type << " ";

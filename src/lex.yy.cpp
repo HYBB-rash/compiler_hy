@@ -789,7 +789,7 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 14 "compiler-hy.lex"
-{token t = new token_("number", yytext);}
+{token t = new token_(NUMBER, yytext);}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
@@ -990,7 +990,7 @@ YY_RULE_SETUP
 case 41:
 YY_RULE_SETUP
 #line 54 "compiler-hy.lex"
-{token t = new token_("id", yytext);}
+{token t = new token_(ID, yytext);}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
@@ -2004,4 +2004,7 @@ void yyfree (void * ptr )
 
 #line 56 "compiler-hy.lex"
 
+void lex(){
+	yylex();
+}
 

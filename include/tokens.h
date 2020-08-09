@@ -12,7 +12,7 @@ using namespace std;
 typedef class token_ *token;
 
 enum token_kind{
-    INT, DOUBLE, CHAR, STRING,
+    INT = 0, DOUBLE, CHAR, STRING,
     FOR, WHILE, DO, BREAK, CONTINUE,
     IF, ELSE,
     CLASS, PUBLIC, PRIVATE,

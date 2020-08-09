@@ -11,6 +11,5 @@
 #include <string>
 using namespace std;
 
-void initStarter();
 
 #endif //COMPLIER_HY_UTILS_H

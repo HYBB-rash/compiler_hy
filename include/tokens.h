@@ -29,7 +29,6 @@ class token_{
 public:
     enum token_kind tk;
     string lexeme;
-    token_(const string& type, char* lex);
+    token_(token_kind type, char* lex);
 };
-void controllerInit();
 #endif //COMPLIER_HY_TOKENS_H

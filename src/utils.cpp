@@ -4,6 +4,4 @@
 #include "../include/utils.h"
 #include <cassert>
 using namespace std;
-void initStarter(){
-    controllerInit();
-}
+

@@ -11,7 +11,7 @@ ID					[a-zA-Z_][0-9a-zA-Z_]+
 
 %%
 
-{NUMBER}			{token t = new token_("number", yytext);}
+{NUMBER}			{token t = new token_(NUMBER, yytext);}
 " "					{continue;}
 "\n"				{continue;}
 "int"				{token t = new token_(INT);}
@@ -51,7 +51,7 @@ ID					[a-zA-Z_][0-9a-zA-Z_]+
 "||"				{token t = new token_(OR);}
 "&&"				{token t = new token_(AND);}
 "!"					{token t = new token_(NOT);}
-{ID}                {token t = new token_("id", yytext);}
+{ID}                {token t = new token_(ID, yytext);}
 
 %%
 void lex(){

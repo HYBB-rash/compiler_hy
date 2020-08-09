@@ -2,7 +2,7 @@
 // Created by hyong on 2020/8/10.
 //
 #include "../include/tokens.h"
-token_::token_(token_kind type, char*& lex) {
+token_::token_(token_kind type, char* lex) {
     lexeme.clear();
     tk = type;
     lexeme.assign(lex);

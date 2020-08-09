@@ -24,7 +24,7 @@ enum token_kind{
     AND, OR, NOT,
     ID, NUMBER
 };
-unordered_map<string, int> controller;
+
 class token_{
 public:
     enum token_kind tk;

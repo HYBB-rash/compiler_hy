@@ -2,6 +2,7 @@
 // Created by hyong on 2020/8/10.
 //
 #include "../include/tokens.h"
+unordered_map<string, int> controller;
 void controllerInit(){
     controller["int"]       = INT;
     controller["double"]    = DOUBLE;

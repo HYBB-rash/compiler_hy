@@ -4,35 +4,32 @@
 
 #ifndef COMPLIER_HY_TOKENS_H
 #define COMPLIER_HY_TOKENS_H
-
 #include <string>
+#include <iostream>
+#include <unordered_map>
 using namespace std;
 
-typedef class token_* token;
-enum kind{
-    FOR, WHILE, BREAK, FUNCTION, ARRAY, IF,
-    ELSE, VAR, CLASS, SIGN, ID, NUMBER,
-    EMPTY
+typedef class token_ *token;
+
+enum token_kind{
+    INT, DOUBLE, CHAR, STRING,
+    FOR, WHILE, DO, BREAK, CONTINUE,
+    IF, ELSE,
+    CLASS, PUBLIC, PRIVATE,
+    L_S_BRACKET, R_S_BRACKET, L_M_BRACKET, R_M_BRACKET,
+    L_L_BRACKET, R_L_BRACKET, L_X_BRACKET, R_X_BRACKET,
+    COMMA, SEMICOLON, COLON, POINT,
+    PLUS, MINUS, TIMES, DIVIDE, ASSIGNMENT,
+    LESS, GREATER, EQUAL, N_EQUAL, LESS_E, GREATER_E,
+    AND, OR, NOT,
+    ID, NUMBER
 };
+unordered_map<string, int> controller;
 class token_{
 public:
-    enum kind k;
+    enum token_kind tk;
     string lexeme;
-    token_() {
-        k = EMPTY;
-        lexeme = nullptr;
-    }
+    token_(const string& type, string lex);
 };
-token get_for_token();
-token get_while_token();
-token get_break_token();
-token get_function_token();
-token get_array_token();
-token get_if_token();
-token get_else_token();
-token get_var_token();
-token get_class_token();
-token get_sign_token(string sign);
-token get_id_token(string Id);
-token get_number_token(string number);
+void controllerInit();
 #endif //COMPLIER_HY_TOKENS_H

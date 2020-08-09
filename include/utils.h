@@ -11,7 +11,6 @@
 #include <string>
 using namespace std;
 
-void outTokenTemplate(const string& s1, const string& s2);
-void printToken(token t);
+void initStarter();
 
 #endif //COMPLIER_HY_UTILS_H

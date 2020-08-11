@@ -4,5 +4,5 @@ project(compiler_hy)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(compiler_hy main.cpp
-        include/tokens.h include/utils.h include/lex.h
-        src/tokens.cpp src/utils.cpp src/lex.yy.cpp)
+        lex/include/tokens.h lex/include/utils.h lex/include/lex.h
+        lex/src/tokens.cpp lex/src/utils.cpp lex/src/lex.yy.cpp)

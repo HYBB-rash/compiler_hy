@@ -2,7 +2,6 @@
 // Created by hyong on 2020/8/8.
 //
 #include "../include/utils.h"
-#include <cassert>
 using namespace std;
 void tokenTypeShow(token_kind type){
     switch (type) {
@@ -68,12 +67,6 @@ void tokenTypeShow(token_kind type){
             break;
         case R_L_BRACKET:
             cout << "}";
-            break;
-        case L_X_BRACKET:
-            cout << "error";
-            break;
-        case R_X_BRACKET:
-            cout << "error";
             break;
         case COMMA:
             cout << ",";

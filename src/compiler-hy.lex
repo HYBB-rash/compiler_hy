@@ -13,7 +13,7 @@ ID					[a-zA-Z_][0-9a-zA-Z_]*
 
 {NUMBER}			{token t = new token_(NUMBER, yytext);}
 " "					{printf("token: blank\n");}
-"\n"				{printf("token: nnn");}
+"\n"				{printf("token: \\n\n");}
 "int"				{token t = new token_(INT);}
 "double"			{token t = new token_(DOUBLE);}
 "char"				{token t = new token_(CHAR);}

@@ -49,12 +49,14 @@ token: \n
 token: STRING 
 token: ID str
 token: = 
-"token: ID demo2
+token: " 
+token: ID demo2
 token: . 
 token: ID hy
 token: ID test
 token: ! 
-"token: ; 
+token: " 
+token: ; 
 token: \n
 token: ID printf
 token: ( 

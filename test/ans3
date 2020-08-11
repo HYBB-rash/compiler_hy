@@ -1,0 +1,99 @@
+Hello, World!
+token: INT 
+token: ID main
+token: ( 
+token: ) 
+token: { 
+token: \n
+token: INT 
+token: ID a
+token: = 
+token: NUMBER 0
+token: ; 
+token: \n
+token: INT 
+token: ID b
+token: = 
+token: NUMBER 100
+token: ; 
+token: \n
+token: FOR 
+token: ( 
+token: INT 
+token: ID i
+token: = 
+token: NUMBER 0
+token: ; 
+token: ID i
+token: < 
+token: NUMBER 100
+token: ; 
+token: ID i
+token: + 
+token: + 
+token: ) 
+token: { 
+token: \n
+token: INT 
+token: ID c
+token: = 
+token: ID a
+token: + 
+token: ID b
+token: ; 
+token: \n
+token: STRING 
+token: ID a
+token: = 
+token: " 
+token: ID nmsl
+token: " 
+token: ; 
+token: \n
+token: CHAR 
+token: ID c
+token: = 
+token: ' 
+token: ID a
+token: ' 
+token: ; 
+token: \n
+token: ID float
+token: = 
+token: NUMBER 0
+token: ; 
+token: \n
+token: BREAK 
+token: ; 
+token: \n
+token: CONTINUE 
+token: ; 
+token: \n
+token: DOUBLE 
+token: ID _asdf
+token: ; 
+token: \n
+token: } 
+token: \n
+token: IF 
+token: ( 
+token: ID a
+token: > 
+token: ID b
+token: ) 
+token: ID return
+token: NUMBER 0
+token: ; 
+token: \n
+token: IF 
+token: ( 
+token: ID a
+token: <= 
+token: ID b
+token: ) 
+token: ID return
+token: NUMBER 1
+token: ; 
+token: \n
+token: } 
+token: \n

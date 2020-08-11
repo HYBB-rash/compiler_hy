@@ -48,6 +48,9 @@ void tokenTypeShow(token_kind type){
         case PRIVATE:
             cout << "PRIVATE";
             break;
+        case RETURN:
+            cout << "RETURN";
+            break;
         case L_S_BRACKET:
             cout << "(";
             break;

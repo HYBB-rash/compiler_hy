@@ -23,7 +23,8 @@ enum token_kind{
     LESS, GREATER, EQUAL, N_EQUAL, LESS_E, GREATER_E,
     AND, OR, NOT,
     ID, NUMBER,
-    QUOTES, D_QUOTES
+    QUOTES, D_QUOTES,
+    RETURN
 };
 
 class token_{

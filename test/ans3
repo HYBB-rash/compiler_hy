@@ -81,7 +81,7 @@ token: ID a
 token: > 
 token: ID b
 token: ) 
-token: ID return
+token: RETURN 
 token: NUMBER 0
 token: ; 
 token: \n
@@ -91,7 +91,7 @@ token: ID a
 token: <= 
 token: ID b
 token: ) 
-token: ID return
+token: RETURN 
 token: NUMBER 1
 token: ; 
 token: \n

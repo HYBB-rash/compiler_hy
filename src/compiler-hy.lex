@@ -7,13 +7,13 @@
 %}
 
 NUMBER				([0-9]+)
-ID					[a-zA-Z_][0-9a-zA-Z_]+
+ID					[a-zA-Z_][0-9a-zA-Z_]*
 
 %%
 
 {NUMBER}			{token t = new token_(NUMBER, yytext);}
-" "					{continue;}
-"\n"				{continue;}
+" "					{printf("token: blank\n");}
+"\n"				{printf("token: nnn");}
 "int"				{token t = new token_(INT);}
 "double"			{token t = new token_(DOUBLE);}
 "char"				{token t = new token_(CHAR);}

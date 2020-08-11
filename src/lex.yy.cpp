@@ -367,8 +367,8 @@ static const flex_int16_t yy_accept[93] =
     {   0,
         0,    0,   43,   42,    3,    2,   40,   42,   17,   18,
        29,   27,   23,   28,   26,   30,    1,   25,   24,   32,
-       31,   33,   42,   19,   20,   42,   42,   42,   42,   42,
-       42,   42,   42,   21,   42,   22,   37,   39,    1,   34,
+       31,   33,   41,   19,   20,   41,   41,   41,   41,   41,
+       41,   41,   41,   21,   42,   22,   37,   39,    1,   34,
        36,   35,   41,   41,   41,   41,   41,    9,   41,   41,
        12,   41,   41,   41,   41,   38,   41,   41,   41,   41,
        41,   41,    8,    4,   41,   41,   41,   41,    6,   41,
@@ -794,13 +794,13 @@ YY_RULE_SETUP
 case 2:
 YY_RULE_SETUP
 #line 15 "compiler-hy.lex"
-{continue;}
+{printf("token: blank\n");}
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
 #line 16 "compiler-hy.lex"
-{continue;}
+{printf("token: nnn");}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP

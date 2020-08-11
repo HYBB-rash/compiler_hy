@@ -1,0 +1,36 @@
+Hello, World!
+token: INT 
+token: blank
+token: ID a
+token: blank
+token: = 
+token: blank
+token: NUMBER 100
+token: ; 
+token: \n
+token: INT 
+token: blank
+token: ID b
+token: blank
+token: = 
+token: blank
+token: NUMBER 200
+token: ; 
+token: \n
+token: ID c
+token: blank
+token: = 
+token: blank
+token: ID a
+token: blank
+token: + 
+token: blank
+token: ID b
+token: ; 
+token: \n
+token: ID return
+token: blank
+token: NUMBER 0
+token: ; 
+token: \n
+token: \n

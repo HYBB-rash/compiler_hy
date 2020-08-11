@@ -1,0 +1,70 @@
+Hello, World!
+token: INT 
+token: ID main
+token: ( 
+token: ) 
+token: { 
+token: \n
+token: INT 
+token: ID a
+token: = 
+token: NUMBER 100
+token: ; 
+token: \n
+token: FOR 
+token: ( 
+token: INT 
+token: ID i
+token: = 
+token: NUMBER 0
+token: ; 
+token: ID i
+token: < 
+token: NUMBER 100
+token: ; 
+token: ID i
+token: + 
+token: + 
+token: ) 
+token: { 
+token: \n
+token: ID a
+token: = 
+token: ID a
+token: + 
+token: NUMBER 1
+token: ; 
+token: \n
+token: IF 
+token: ( 
+token: ID i
+token: > 
+token: NUMBER 51
+token: ) 
+token: BREAK 
+token: ; 
+token: \n
+token: } 
+token: \n
+token: STRING 
+token: ID str
+token: = 
+"token: ID demo2
+token: . 
+token: ID hy
+token: ID test
+token: ! 
+"token: ; 
+token: \n
+token: ID printf
+token: ( 
+token: ID str
+token: ) 
+token: ; 
+token: \n
+token: ID return
+token: NUMBER 0
+token: ; 
+token: \n
+token: } 
+token: \n

@@ -12,7 +12,7 @@ ID					[a-zA-Z_][0-9a-zA-Z_]*
 %%
 
 {NUMBER}			{token t = new token_(NUMBER, yytext);}
-" "					{printf("token: blank\n");}
+" "					{continue;}
 "\n"				{printf("token: \\n\n");}
 "int"				{token t = new token_(INT);}
 "double"			{token t = new token_(DOUBLE);}
@@ -52,6 +52,7 @@ ID					[a-zA-Z_][0-9a-zA-Z_]*
 "&&"				{token t = new token_(AND);}
 "!"					{token t = new token_(NOT);}
 {ID}                {token t = new token_(ID, yytext);}
+"\t"				{continue;}
 
 %%
 void lex(){

@@ -22,7 +22,8 @@ enum token_kind{
     PLUS, MINUS, TIMES, DIVIDE, ASSIGNMENT,
     LESS, GREATER, EQUAL, N_EQUAL, LESS_E, GREATER_E,
     AND, OR, NOT,
-    ID, NUMBER
+    ID, NUMBER,
+    QUOTES, D_QUOTES
 };
 
 class token_{

@@ -51,6 +51,8 @@ ID					[a-zA-Z_][0-9a-zA-Z_]*
 "||"				{token t = new token_(OR);}
 "&&"				{token t = new token_(AND);}
 "!"					{token t = new token_(NOT);}
+"\""                {token t = new token_(D_QUOTES);}
+"\'"                {token t = new token_(QUOTES);}
 {ID}                {token t = new token_(ID, yytext);}
 "\t"				{continue;}
 

@@ -132,6 +132,12 @@ void tokenTypeShow(token_kind type){
         case NUMBER:
             cout << "NUMBER";
             break;
+        case QUOTES:
+            cout << "\'";
+            break;
+        case D_QUOTES:
+            cout << "\"";
+            break;
         default:
             cout << "error";
     }

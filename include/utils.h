@@ -10,6 +10,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+void tokenTypeShow(token_kind type);
 
 #endif //COMPLIER_HY_UTILS_H

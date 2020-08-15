@@ -1,6 +1,7 @@
 %option noyywrap
 %option nomain
 %{
+#include "../include/tokens.h"
 #include "../include/utils.h"
 #include "../include/lex.h"
 %}
@@ -10,54 +11,54 @@ ID					[a-zA-Z_][0-9a-zA-Z_]*
 
 %%
 
-{NUMBER}			{list.push_back(new token_(NUMBER, yytext));}
+{NUMBER}			{token t = new token_(NUMBER, yytext);}
 " "					{continue;}
 "\n"				{printf("token: \\n\n");}
-"int"				{list.push_back(new token_(INT));}
-"double"			{list.push_back(new token_(DOUBLE));}
-"char"				{list.push_back(new token_(CHAR));}
-"string"			{list.push_back(new token_(STRING));}
-"for"				{list.push_back(new token_(FOR));}
-"do"				{list.push_back(new token_(DO));}
-"break"				{list.push_back(new token_(BREAK));}
-"continue"			{list.push_back(new token_(CONTINUE));}
-"if"				{list.push_back(new token_(IF));}
-"else"				{list.push_back(new token_(ELSE));}
-"class"				{list.push_back(new token_(CLASS));}
-"public"			{list.push_back(new token_(PUBLIC));}
-"private"			{list.push_back(new token_(PRIVATE));}
-"return"            {list.push_back(new token_(RETURN));}
-"("					{list.push_back(new token_(L_S_BRACKET));}
-")"					{list.push_back(new token_(R_S_BRACKET));}
-"["					{list.push_back(new token_(L_M_BRACKET));}
-"]"					{list.push_back(new token_(R_M_BRACKET));}
-"{"					{list.push_back(new token_(L_L_BRACKET));}
-"}"					{list.push_back(new token_(R_L_BRACKET));}
-","					{list.push_back(new token_(COMMA));}
-";"					{list.push_back(new token_(SEMICOLON));}
-":"					{list.push_back(new token_(COLON));}
-"."					{list.push_back(new token_(POINT));}
-"+"					{list.push_back(new token_(PLUS));}
-"-"					{list.push_back(new token_(MINUS));}
-"*"					{list.push_back(new token_(TIMES));}
-"/"					{list.push_back(new token_(DIVIDE));}
-"="					{list.push_back(new token_(ASSIGNMENT));}
-"<"					{list.push_back(new token_(LESS));}
-">"					{list.push_back(new token_(GREATER));}
-"<="				{list.push_back(new token_(LESS_E));}
-">="				{list.push_back(new token_(GREATER_E));}
-"=="				{list.push_back(new token_(EQUAL));}
-"!="				{list.push_back(new token_(N_EQUAL));}
-"||"				{list.push_back(new token_(OR));}
-"&&"				{list.push_back(new token_(AND));}
-"!"					{list.push_back(new token_(NOT));}
-"\""                {list.push_back(new token_(D_QUOTES));}
-"\'"                {list.push_back(new token_(QUOTES));}
-{ID}                {list.push_back(new token_(ID, yytext));}
+"int"				{token t = new token_(INT);}
+"double"			{token t = new token_(DOUBLE);}
+"char"				{token t = new token_(CHAR);}
+"string"			{token t = new token_(STRING);}
+"for"				{token t = new token_(FOR);}
+"do"				{token t = new token_(DO);}
+"break"				{token t = new token_(BREAK);}
+"continue"			{token t = new token_(CONTINUE);}
+"if"				{token t = new token_(IF);}
+"else"				{token t = new token_(ELSE);}
+"class"				{token t = new token_(CLASS);}
+"public"			{token t = new token_(PUBLIC);}
+"private"			{token t = new token_(PRIVATE);}
+"return"            {token t = new token_(RETURN);}
+"("					{token t = new token_(L_S_BRACKET);}
+")"					{token t = new token_(R_S_BRACKET);}
+"["					{token t = new token_(L_M_BRACKET);}
+"]"					{token t = new token_(R_M_BRACKET);}
+"{"					{token t = new token_(L_L_BRACKET);}
+"}"					{token t = new token_(R_L_BRACKET);}
+","					{token t = new token_(COMMA);}
+";"					{token t = new token_(SEMICOLON);}
+":"					{token t = new token_(COLON);}
+"."					{token t = new token_(POINT);}
+"+"					{token t = new token_(PLUS);}
+"-"					{token t = new token_(MINUS);}
+"*"					{token t = new token_(TIMES);}
+"/"					{token t = new token_(DIVIDE);}
+"="					{token t = new token_(ASSIGNMENT);}
+"<"					{token t = new token_(LESS);}
+">"					{token t = new token_(GREATER);}
+"<="				{token t = new token_(LESS_E);}
+">="				{token t = new token_(GREATER_E);}
+"=="				{token t = new token_(EQUAL);}
+"!="				{token t = new token_(N_EQUAL);}
+"||"				{token t = new token_(OR);}
+"&&"				{token t = new token_(AND);}
+"!"					{token t = new token_(NOT);}
+"\""                {token t = new token_(D_QUOTES);}
+"\'"                {token t = new token_(QUOTES);}
+{ID}                {token t = new token_(ID, yytext);}
 "\t"				{continue;}
 
 %%
 vector<token> lex(){
-    vector<token> list;
 	yylex();
+	return list;
 }
